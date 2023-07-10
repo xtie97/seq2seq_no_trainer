@@ -51,7 +51,7 @@ def predict_text(df):
     df['ROUGE3'] = results_rouge3['f']
     df['ROUGEL'] = results_rougeL['f']
     df['ROUGELsum'] = results_rougeLsum['f']
-    df.to_excel('./PEGASUS_ROUGE_score.xlsx')
+    df.to_excel('./rouge_score.xlsx')
     
     results_rouge1['precision'] = np.around(np.mean(results_rouge1['precision']), 3)
     results_rouge1['recall'] = np.around(np.mean(results_rouge1['recall']), 3)
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     rl_list = []
     rls_list = []
     for finetune_nepoch in [11]:
-        #Get data
+        # Get data
         df = pd.read_excel('./test_length_penalty_{}/test_{}_epoch{:02d}_all.xlsx'.format(
                                                         length_penalty, 'pegasus_large', finetune_nepoch))
                                                         
