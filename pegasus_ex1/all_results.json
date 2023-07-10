@@ -1,0 +1,15 @@
+{"eval_rouge1": 50.1222, "eval_rouge2": 27.6636, "eval_rougeL": 37.1567, "eval_rougeLsum": 47.0622, "eval_train_loss": 1.6985216296651249, "eval_epoch": 0, "eval_step": 987}
+{"eval_rouge1": 50.5924, "eval_rouge2": 28.3601, "eval_rougeL": 38.0045, "eval_rougeLsum": 47.4566, "eval_train_loss": 1.4072229735616526, "eval_epoch": 1, "eval_step": 1974}
+{"eval_rouge1": 50.2777, "eval_rouge2": 28.7946, "eval_rougeL": 38.8708, "eval_rougeLsum": 47.3331, "eval_train_loss": 1.283005485877899, "eval_epoch": 2, "eval_step": 2961}
+{"eval_rouge1": 52.7779, "eval_rouge2": 30.1354, "eval_rougeL": 39.5679, "eval_rougeLsum": 49.5589, "eval_train_loss": 1.1945371655604486, "eval_epoch": 3, "eval_step": 3948}
+{"eval_rouge1": 53.3821, "eval_rouge2": 30.8506, "eval_rougeL": 40.3404, "eval_rougeLsum": 50.2366, "eval_train_loss": 1.1192692079980358, "eval_epoch": 4, "eval_step": 4935}
+{"eval_rouge1": 53.3128, "eval_rouge2": 30.8828, "eval_rougeL": 40.3993, "eval_rougeLsum": 50.1736, "eval_train_loss": 1.051522427647003, "eval_epoch": 5, "eval_step": 5922}
+{"eval_rouge1": 53.4742, "eval_rouge2": 30.9767, "eval_rougeL": 40.489, "eval_rougeLsum": 50.3169, "eval_train_loss": 0.9926882806559688, "eval_epoch": 6, "eval_step": 6909}
+{"eval_rouge1": 54.0528, "eval_rouge2": 31.3639, "eval_rougeL": 40.725, "eval_rougeLsum": 50.7655, "eval_train_loss": 0.9306355366279623, "eval_epoch": 7, "eval_step": 7896}
+{"eval_rouge1": 54.0261, "eval_rouge2": 31.0832, "eval_rougeL": 40.7269, "eval_rougeLsum": 50.7929, "eval_train_loss": 0.8724164594157902, "eval_epoch": 8, "eval_step": 8883}
+{"eval_rouge1": 53.8011, "eval_rouge2": 30.8801, "eval_rougeL": 40.2609, "eval_rougeLsum": 50.4824, "eval_train_loss": 0.8194825889462679, "eval_epoch": 9, "eval_step": 9870}
+{"eval_rouge1": 53.9119, "eval_rouge2": 30.9579, "eval_rougeL": 40.4559, "eval_rougeLsum": 50.6293, "eval_train_loss": 0.7654307023032568, "eval_epoch": 10, "eval_step": 10857}
+{"eval_rouge1": 53.8453, "eval_rouge2": 30.8973, "eval_rougeL": 40.5673, "eval_rougeLsum": 50.5088, "eval_train_loss": 0.7158950614228234, "eval_epoch": 11, "eval_step": 11844}
+{"eval_rouge1": 53.7043, "eval_rouge2": 30.6901, "eval_rougeL": 40.2579, "eval_rougeLsum": 50.4281, "eval_train_loss": 0.6671393958504942, "eval_epoch": 12, "eval_step": 12831}
+{"eval_rouge1": 53.8691, "eval_rouge2": 30.7337, "eval_rougeL": 40.5612, "eval_rougeLsum": 50.5518, "eval_train_loss": 0.6211840303629135, "eval_epoch": 13, "eval_step": 13818}
+{"eval_rouge1": 53.6845, "eval_rouge2": 30.4501, "eval_rougeL": 39.8896, "eval_rougeLsum": 50.2567, "eval_train_loss": 0.5766294027610569, "eval_epoch": 14, "eval_step": 14805}
