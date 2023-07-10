@@ -1,8 +1,6 @@
 import os 
 os.environ['CURL_CA_BUNDLE'] = ''
-os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org install bert-score fastai==2.7.11") 
 os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org install scipy uvicorn gunicorn==19.9.0 fastapi uvloop httptools")
-os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org install ohmeow-blurr==1.0.5")
 os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org install huggingface-hub --upgrade")
 os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org install -U transformers")
 os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org install requests==2.27.1")
@@ -10,10 +8,7 @@ os.system("pip --trusted-host pypi.org --trusted-host files.pythonhosted.org ins
 import pandas as pd
 from tqdm import tqdm 
 import torch
-from fastai.text.all import *
-from transformers import *
-from blurr.text.data.all import *
-from blurr.text.modeling.all import *
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM 
 import datasets
 import time 
 
@@ -72,7 +67,6 @@ def filter_test_data(df):
     # drop the data with no exam date
     #df = df[df['Exam Date Time'] != 'Remove'].reset_index(drop=True)
     #df = df[df['Study Description'] == 'PET CT WHOLE BODY'].reset_index(drop=True)
-    #df = df.sample(n=1000, random_state=716).reset_index(drop=True)
     return df 
 
 
@@ -82,6 +76,12 @@ if __name__ == '__main__':
     df = filter_test_data(df)
     df['impressions'] = df['impressions'].apply(lambda x: x.replace('\n',' '))
     df['findings_info'] = df['findings_info'].apply(lambda x: x.replace('\n',' '))
+    
     print('Start testing')
-    finetune_nepoch = 6
-    predict_text(df, 'findings_info', length_penalty=2.0, model_template=f'pegasus_ex1/epoch_{finetune_nepoch}', savename='pegasus_ex1', finetune_nepoch=finetune_nepoch)
+    finetune_nepoch = 6 # specify the model index (#epoch) you want to test 
+    predict_text(df, 'findings_info', 
+                 length_penalty=2.0, 
+                 model_template=f'pegasus_ex1/epoch_{finetune_nepoch}', 
+                 savename='pegasus_ex1', 
+                 finetune_nepoch=finetune_nepoch)
+    
