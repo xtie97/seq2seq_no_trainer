@@ -40,4 +40,6 @@ python predict_seq2seq.py
 
 Make sure you have the necessary dependencies installed before running the command.
 
-Adjust any parameters or options in the predict_seq2seq.py file to suit your specific inference requirements.
+Adjust any parameters in the predict_seq2seq.py file to suit your specific inference requirements. Feel free to 
+In particular, pay attention to the `model.generate()` function where the generation of sequences takes place.
+
