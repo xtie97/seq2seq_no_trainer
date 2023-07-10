@@ -501,9 +501,7 @@ if __name__ == "__main__":
     args = parse_args()
     train(args)
 '''
-command:
-python finetune_PEGASUS_no_trainer.py --model_name_or_path google/pegasus-large --output_dir pegasus_ex1 --learning_rate 4e-4 --per_device_train_batch_size 4 --gradient_accumulation_steps 8 
-
-
+run the command:
+python finetune_seq2seq_no_trainer.py --model_name_or_path google/pegasus-large --output_dir pegasus_ex1 --learning_rate 4e-4 --per_device_train_batch_size 4 --gradient_accumulation_steps 8 
 ''' 
 # --resume_from_checkpoint output/epoch_0
