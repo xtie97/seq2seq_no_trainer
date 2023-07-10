@@ -1,6 +1,6 @@
 # seq2seq_no_trainer 
 
-This repository provides an example of how to run a sequence-to-sequence (seq2seq) model using PEGASUS-large. The model operates on a dataset that is stored in the "archive" folder as CSV files.
+This repository provides an example of how to run a sequence-to-sequence (seq2seq) model using PEGASUS-large. The model operates on a dataset that is stored in the `archive` folder as CSV files.
 
 ## Installation
 
@@ -12,7 +12,7 @@ To use this code, you will need to install the following dependencies:
 The versions of the required python libraries can be found in the provided `Dockerfile`. Build the Docker image if needed.
 
 ## Usage
-To run the seq2seq model on your dataset, follow these steps:
+To finetune the seq2seq model on your dataset, follow these steps:
 
 1. Clone this repository: 
 
@@ -33,7 +33,7 @@ python finetune_seq2seq_no_trainer.py --model_name_or_path google/pegasus-large 
 ```
 
 ## Inference
-To evaluate the finetuned seq2seq model on your testing set, run the following command in your terminal:
+To evaluate the finetuned seq2seq model on your testing set, run the following command:
 ```shell
 python predict_seq2seq.py
 ```
