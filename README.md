@@ -19,7 +19,7 @@ To run the seq2seq model on your dataset, follow these steps:
 ```shell
 git clone https://github.com/xtie97/seq2seq_no_trainer.git
 
-2. Naviage to the repository's root directory: 
+2. Naviage to the  root directory:
 ```shell
 cd seq2seq_no_trainer
 
