@@ -33,5 +33,11 @@ python finetune_seq2seq_no_trainer.py --model_name_or_path google/pegasus-large 
 ```
 
 ## Inference
-To run the finetuned seq2seq model on your testing set, modify the 
+To evaluate the finetuned seq2seq model on your testing set, run the following command in your terminal:
+```shell
+python predict_seq2seq.py
+```
 
+Make sure you have the necessary dependencies installed before running the command.
+
+Adjust any parameters or options in the predict_seq2seq.py file to suit your specific inference requirements.
