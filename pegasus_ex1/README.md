@@ -1,1 +1,1 @@
-## results of PEGASUS-large
+## Results of PEGASUS-large
