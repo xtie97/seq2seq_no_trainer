@@ -9,7 +9,7 @@ To use this code, you will need to install the following dependencies:
 - Accelerate
 - Transformer
 
-The versions of the required packages can be found in the provided Dockerfile. 
+The versions of the required packages can be found in the provided Dockerfile. Build the Docker image if needed.
 
 ## Usage
 To run the seq2seq model on your dataset, follow these steps:
