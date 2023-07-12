@@ -492,7 +492,7 @@ if __name__ == "__main__":
     df['impressions'] = df['impressions'].apply(lambda x: x.replace('\n',' '))
     df['findings_info'] = df['findings_info'].apply(lambda x: x.replace('\n',' '))
 
-    df_val = df.sample(frac=0.06, random_state=42)
+    df_val = df.sample(frac=0.06, random_state=42) # 2000 cases for validation
     df_train = df.drop(df_val.index).reset_index().drop(columns=['index'])
     df_val = df_val.reset_index().drop(columns=['index'])
     df_train.to_csv('archive/train.csv', index=False)
