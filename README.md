@@ -1,4 +1,4 @@
-# seq2seq_no_trainer 
+# Seq2seq model finetuning without using trainer function
 
 This repository provides an example of how to run a sequence-to-sequence (seq2seq) model using PEGASUS-large. The model operates on a dataset that is stored in the `archive` folder as CSV files.
 
